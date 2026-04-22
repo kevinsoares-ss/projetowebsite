@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="pt-bt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Boldonse&family=Great+Vibes&family=Playwrite+US+Trad+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Sixtyfour&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <nav class="flex items-center justify-between py-6 px-10">
+          <h1 class="text-2xl font-bold tracking-widest">IngrideBritto</h1>
+
+          <ul class="hidden md:flex gap-8 text-sm uppercase tracking-wide">
+            <li class="hover:text-gray-500 cursor-pointer">Roupas</li>
+            <li class="hover:text-gray-500 cursor-pointer">Novidade</li>
+            <li class="hover:text-gray-500 cursor-pointer">Sobre</li>
+            <li class="hover:text-gray-500 cursor-pointer">Acessórios</li>
+          </ul>
+
+          <div class="flex items-center gap-3">
+            <input
+              class="border rounded-full px-4 py-1 w-40 text-sm"
+              placeholder="Buscar..."
+            />
+            <button class="text-sm rounded-full text-sm">Login</button>
+            <button class="bg-black text-white px-4 py-2 rounded-full text-sm">
+              Cadastro
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="slider relative overflow-hidden">
+        <img
+          id="slide"
+          src="../fotos/roupas/Capa.png"
+          class="w-full max-h-[500px] object-cover object-top"
+        />
+
+        <div class="controls">
+          <button onclick="prev()">⟨</button>
+          <button onclick="next()">⟩</button>
+        </div>
+
+        <!-- Texto em cima (lado esquerdo) -->
+        <div class="absolute top-1/2 left-50 -translate-y-1/2 text-black">
+          <h1 id="slideTitle" class="text-5xl font-bold"></h1>
+          <p id="slideText" class="mt-4 text-lg"></p>
+          <button
+            class="mt-6 bg-white text-black px-6 py-2 rounded hover:scale-105 transition"
+          >
+            Comprar agora
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDs -->
+    <div class="Conteudo1 p-24">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+          class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="../fotos/roupas/roupa.png"
+            class="w-full h-64 object-cover group-hover:scale-105 transition"
+          />
+          <h2 class="mt-4 font-bold text-lg">Camiseta Street</h2>
+          <p class="text-gray-600">R$ 79,90</p>
+
+          <button
+            class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="../fotos/roupas/Capa.png"
+            class="w-full h-64 object-cover group-hover:scale-105 transition"
+          />
+
+          <h2 class="mt-4 font-bold text-lg">Moletom Oversized</h2>
+          <p class="text-gray-600">R$ 149,90</p>
+
+          <button
+            class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="../fotos/roupas/roupa.png"
+            class="w-full h-64 object-cover group-hover:scale-105 transition"
+          />
+
+          <h2 class="mt-4 font-bold text-lg">Calça Cargo</h2>
+          <p class="text-gray-600">R$ 129,90</p>
+
+          <button
+            class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800"
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDs -->
+    <div class="Conteudo2 py-6 p-24">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+          class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="../fotos/roupas/roupa.png"
+            class="w-full h-64 object-cover group-hover:scale-105 transition"
+          />
+          <h2 class="mt-4 font-bold text-lg">Camiseta Street</h2>
+          <p class="text-gray-600">R$ 79,90</p>
+
+          <button
+            class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="../fotos/roupas/Capa.png"
+            class="w-full h-64 object-cover group-hover:scale-105 transition"
+          />
+
+          <h2 class="mt-4 font-bold text-lg">Moletom Oversized</h2>
+          <p class="text-gray-600">R$ 149,90</p>
+
+          <button
+            class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800"
+          >
+            Comprar
+          </button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
+        >
+          <img
+            src="../fotos/roupas/roupa.png"
+            class="w-full h-64 object-cover group-hover:scale-105 transition"
+          />
+
+          <h2 class="mt-4 font-bold text-lg">Calça Cargo</h2>
+          <p class="text-gray-600">R$ 129,90</p>
+
+          <button
+            class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800"
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-black text-white mt-16 p-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Logo / Marca -->
+        <div>
+          <h2 class="text-2xl font-bold">IngrideBritto</h2>
+          <p class="text-gray-400 mt-2">
+            Moda moderna e estilo para todos os momentos.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Links</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="hover:text-white cursor-pointer">Roupas</li>
+            <li class="hover:text-white cursor-pointer">Novidades</li>
+            <li class="hover:text-white cursor-pointer">Sobre</li>
+            <li class="hover:text-white cursor-pointer">Acessórios</li>
+          </ul>
+        </div>
+
+        <!-- Contato -->
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Contato</h3>
+          <p class="text-gray-400">Email: contato@ingridebritto.com</p>
+          <p class="text-gray-400">WhatsApp: (85) 99999-9999</p>
+        </div>
+      </div>
+
+      <!-- linha inferior -->
+      <div
+        class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500 text-sm"
+      >
+        © 2026 IngrideBritto. Todos os direitos reservados.
+      </div>
+    </footer>
+
+    <script src="login.js"></script>
+  </body>
+</html>

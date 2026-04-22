@@ -1,0 +1,36 @@
+h1 {
+     font-family: "Great Vibes", cursive;
+      font-weight: 400px;
+      font-style: normal;
+      font-size: 50px;
+}
+
+.slider {
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background: rgba(0,0,0,0.5);
+  color: rgb(160, 157, 151);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+body{
+    background-color: rgb(243, 237, 232);
+}
+h2 {
+    text-align: center;
+}
+p{
+    text-align: center;
+}
