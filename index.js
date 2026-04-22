@@ -1,16 +1,16 @@
 const slides = [
   {
-    image: "../fotos/roupas/Capa.png",
+    image: "fotos/roupas/Capa.png",
     title: "Nova Coleção",
     text: "Estilo que define você"
   },
   {
-    image: "../fotos/roupas/roupa.png",
+    image: "fotos/roupas/roupa.png",
     title: "Street Style",
     text: "Conforto e atitude no seu dia a dia"
   },
   {
-    image: "../fotos/roupas/Capa.png",
+    image: "fotos/roupas/Capa.png",
     title: "Elegância",
     text: "Moda premium para todas as ocasiões"
   }
